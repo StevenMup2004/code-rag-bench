@@ -17,8 +17,7 @@ import argparse
 from utils import BEIR_DATASETS
 
 from tqdm import tqdm
-
-from pyserini.search import SimpleSearcher
+from pyserini.search.lucene import LuceneSearcher as SimpleSearcher
 from pyserini.analysis import JWhiteSpaceAnalyzer
 from pyserini import analysis
 from gzip import GzipFile
